@@ -52,8 +52,7 @@ jobs:
         - rubocop -d
         # https://www.shellcheck.net
         - shellcheck --version
-        - git ls-files -- '*.sh' '*.bash' '*.ksh'
-                        | xargs shellcheck
+        # git ls-files -- '*.sh' '*.bash' '*.ksh' | xargs shellcheck
         # https://commitlint.js.org
         - npm i -D @commitlint/config-conventional
                    @commitlint/travis-cli

@@ -13,9 +13,7 @@ ignore: |
   test/**/states/**/*.sls
   .kitchen/
   bin/kitchen
-  maven/osfamilymap.yaml
-  maven/osfingermap.yaml
-  pillar.example
+  .delivery/build_cookbook/.kitchen.yml
 
 yaml-files:
   # Default settings
@@ -23,7 +21,6 @@ yaml-files:
   - '*.yml'
   - .salt-lint
   - .yamllint
-  # SaltStack Formulas additional settings
   - '*.example'
   - test/**/*.sls
 
